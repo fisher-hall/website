@@ -1,15 +1,9 @@
-<!-- Latest compiled and minified CSS -->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <!DOCTYPE html>
+
+<!--Declarations-->
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Fisher Hall</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,9 +13,91 @@
 </head>
 <body>
 
+
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand" href="#">The Cadillac</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            
+            <!--Leadership-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hall Staff</a>
+                <a class="dropdown-item" href="#">Hall Government</a>
+                </div>
+            </li>
+
+            <!--Traditions-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Traditions</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Fisher Regatta</a>
+                <a class="dropdown-item" href="#">Fisher Funk</a>
+                <a class="dropdown-item" href="#">Fred Talks</a>
+                </div>
+            </li>
+
+             <!--About-->
+             <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+
+            <!--Welcome Weekend-->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Welcome Weekend</a>
+            </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+<!--Jumbotron Header-->
+<div class="jumbotron text-center">
+    <h1>Welcome to Fisher Hall</h1>
+    <p>Home of the World Famous Fisher Regatta!</p> 
+</div>
+
+
+<!--Instagram, Welcome Weekend, and Regatta Row-->
 <div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
+    <div class="row">
+
+    <!--Instagram Column-->
+    <div class="col-sm-4">
+        <h3>Instagram</h3>
+        <p>
+            Keep up with the fisher community @real_fisherhall
+            and @fisher_regatta
+        </p>
+    </div>
+
+    <!--Regatta Column-->
+    <div class="col-sm-4">
+        <h3>Regatta</h3> 
+        <p>
+            The fisher regatta is universally recognized as the best event on campus!
+        </p>
+    </div>
+
+    <!--Welcome Weekend Column-->
+    <div class="col-sm-4">
+        <h3>Welcome Weekend</h3>
+        <p>
+            Are you a class of 2023 Fisherman?
+        </p>
+        <p>
+            Check out our welcome weekend page!
+        </p>
+    </div>
+
+    </div>
 </div>
 
 </body>

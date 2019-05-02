@@ -1,0 +1,80 @@
+/*general customizations*/
+body {
+    text-align: center;
+}
+
+
+
+/*navbar customizations*/
+.navbar{
+    background-color: #3A5242;
+    margin-bottom: 0;
+}
+.dropdown-menu{
+    background-color: rgb(77, 114, 89);
+}
+.dropdown-menu a{
+    color: rgb(212, 212, 212);
+}
+.dropdown-menu a:hover{
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: rgb(77, 114, 89);
+}
+
+
+
+/*jumbotron customiations*/
+.jumbotron {
+    background-image: url("JumbotronBackground.svg");
+    background-size: cover;
+}
+.jumbotron h1{
+    font-size: 50px;
+}
+.jumbotron p{
+    font-size: 20px;
+}
+
+
+
+/*Stats*/
+.stats-container {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+.stat-container {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+.stats-number {
+    color: #3A5242;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+}
+.stats-description {
+    color: black;
+    font-size: 35px;
+}
+
+/*footer customizations*/
+.page-footer{
+    background-color: #3A5242;
+}
+.page-footer p{
+    color: rgb(226, 225, 225);
+}
+
+
+
+/*extra spacing between rows: <div class="row top-buffer"></div> ... include the ...*/
+.top-buffer { 
+    margin-top:20px; 
+}
+

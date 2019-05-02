@@ -11,5 +11,5 @@ python3 -m http.server
 or 
 
 for localhost:xxxx run:
-localhost:xxxx run python3 -m http.server xxxx
+python3 -m http.server xxxx
 

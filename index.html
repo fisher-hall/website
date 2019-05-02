@@ -6,17 +6,23 @@
   <title>Fisher Hall</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+
+
 <body>
 
-
 <!--Nav Bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="#">The Cadillac</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="FisherIcon.svg" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +34,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Hall Staff</a>
+                <a class="dropdown-item" href="./HallStaff/">Hall Staff</a>
                 <a class="dropdown-item" href="#">Hall Government</a>
                 </div>
             </li>
@@ -61,11 +67,75 @@
 <!--Jumbotron Header: Welcome to Fisher Hall-->
 <div class="jumbotron text-center">
     <h1>Welcome to Fisher Hall</h1>
-    <p>Home of the World Famous Fisher Regatta!</p> 
+    <p>Home of the World Famous Fisher Regatta</p> 
+</div>
+
+
+<!--Countdown-->
+<div class="container">
+    <div class="row">          
+        <!--Days-->
+        <div class="col-sm"> 
+            <div class="stats-number">
+                XXX
+            </div>
+            <div class="stats-description">
+                Days
+            </div>
+        </div>  
+
+        <!--Hours-->
+        <div class="col-sm">
+            <div class="stats-number">
+                XXX
+            </div>
+            <div class="stats-description">
+                Hours
+            </div>
+        </div>
+
+        <!--Minutes-->
+        <div class="col-sm">
+            <div class="stats-number">
+                XXX
+            </div>
+            <div class="stats-description">
+                Minutes
+            </div>
+        </div>
+
+        <!--Seconds-->
+        <div class="col-sm">
+            <div class="stats-number">
+                XXX
+            </div>
+            <div class="stats-description">
+                Seconds
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--"Until The Fisher Regatta"-->
+<div class="row top-buffer"></div>
+<div class="row top-buffer"></div> 
+<div class ="container">
+    <div class = "row">
+        <div class = "col-lg">
+
+                <h1 align="center"> Until The Fisher Regatta!</h3>
+
+        </div>
+    </div>
 </div>
 
 
 <!--Instagram, Welcome Weekend, and Regatta Row-->
+<div class="row top-buffer"></div> 
+<div class="row top-buffer"></div>
+<div class="row top-buffer"></div>
+<div class="row top-buffer"></div> 
 <div class="container">
     <div class="row">
 
@@ -90,15 +160,23 @@
     <div class="col-sm-4">
         <h3>Welcome Weekend</h3>
         <p>
-            Are you a class of 2023 Fisherman?
-        </p>
-        <p>
+            Are you a class of 2023 Fisherman? <br>
             Check out our welcome weekend page!
-        </p>
+        </p> 
     </div>
 
     </div>
 </div>
 
+<footer class="page-footer">
+    <p>
+        <br>
+        Ya Gotta Regatta
+        <br>
+    </p>
+    <div class="row top-buffer"></div> 
+</footer>
+
 </body>
+
 </html>

@@ -1,9 +1,21 @@
-/*general customizations*/
+
+/* General Customizations*/
 div {
     text-align: center;
 }
 
+/*h2 customizations*/
+h2 {
+    color: #3A5242;
+    text-align: left;
+    margin: 20px;
+}
 
+/* p customizations*/
+p {
+    text-align: left;
+    margin: 20px;
+}
 
 /*navbar customizations*/
 .navbar{
@@ -70,11 +82,10 @@ div {
     background-color: #3A5242;
     text-align: center;
 }
-.page-footer p{
+.page-footer h6{
     color: rgb(226, 225, 225);
+    text-align: center;
 }
-
-
 
 /*extra spacing between rows: <div class="row top-buffer"></div> ... include the ...*/
 .top-buffer { 

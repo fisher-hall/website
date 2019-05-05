@@ -1,133 +1,138 @@
 <!DOCTYPE html>
 
-<!--Declarations-->
-<html lang="en">
-<head>
-  <title>Fisher Hall</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+ <!--ORDER MATTERS, DON'T WASTE 4 HOURS WONDERING WHY SHIT WASN'T WORKING LIKE ME!-->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<html ng-app="myApp">
+
+<head>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-
-<body>
-
-<!--Nav Bar-->
-<nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
-            <img src="FisherIcon.svg" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+       
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            
-            <!--Leadership-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./HallStaff/">Hall Staff</a>
-                <a class="dropdown-item" href="#">Hall Government</a>
-                </div>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#/">
+        <img src="FisherIcon.svg" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        
+        <!--Leadership-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#/HallStaff">Hall Staff</a>
+            <a class="dropdown-item" href="#/HallGov">Hall Government</a>
+            </div>
+        </li>
 
-            <!--Traditions-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Traditions</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Fisher Regatta</a>
-                <a class="dropdown-item" href="#">Fisher Funk</a>
-                <a class="dropdown-item" href="#">Fred Talks</a>
-                </div>
-            </li>
+        <!--Traditions-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Traditions</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#/FisherRegatta">Fisher Regatta</a>
+            <a class="dropdown-item" href="#/FisherFunk">Fisher Funk</a>
+            <a class="dropdown-item" href="#/FredTalks">Fred Talks</a>
+            </div>
+        </li>
 
-             <!--About-->
-             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-
-            <!--Welcome Weekend-->
+            <!--About-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Welcome Weekend</a>
-            </li>
+            <a class="nav-link" href="#/About">About</a>
+        </li>
 
-            </ul>
-        </div>
-    </nav>
+        <!--Alumni-->
+        <li class="nav-item">
+            <a class="nav-link" href="#/Alumni">Alumni</a>
+        </li>
+
+        <!--Welcome Weekend-->
+        <li class="nav-item">
+            <a class="nav-link" href="#/WelcomeWeekend">Welcome Weekend</a>
+        </li>
+
+        </ul>
+    </div>
+</nav>
 
 
 <!--Jumbotron Header: Welcome to Fisher Hall-->
 <div class="jumbotron text-center">
-    <h1>Welcome to Fisher Hall</h1>
-    <p>Home of the World Famous Fisher Regatta</p> 
+<h1>Welcome to Fisher Hall</h1>
+<p>Home of the World Famous Fisher Regatta</p> 
 </div>
 
 
 <!--Countdown-->
 <div class="container">
-    <div class="row">          
-        <!--Days-->
-        <div class="col-sm"> 
-            <div class="stats-number">
-                XXX
-            </div>
-            <div class="stats-description">
-                Days
-            </div>
-        </div>  
+<div class="row">  
 
-        <!--Hours-->
-        <div class="col-sm">
-            <div class="stats-number">
-                XXX
-            </div>
-            <div class="stats-description">
-                Hours
-            </div>
+    <!--Days-->
+    <div class="col-sm"> 
+        <div class="stats-number">
+            XXX
         </div>
-
-        <!--Minutes-->
-        <div class="col-sm">
-            <div class="stats-number">
-                XXX
-            </div>
-            <div class="stats-description">
-                Minutes
-            </div>
+        <div class="stats-description">
+            Days
         </div>
+    </div>  
 
-        <!--Seconds-->
-        <div class="col-sm">
-            <div class="stats-number">
-                XXX
-            </div>
-            <div class="stats-description">
-                Seconds
-            </div>
+    <!--Hours-->
+    <div class="col-sm">
+        <div class="stats-number">
+            XX
+        </div>
+        <div class="stats-description">
+            Hours
         </div>
     </div>
-</div>
 
+    <!--Minutes-->
+    <div class="col-sm">
+        <div class="stats-number">
+            XX
+        </div>
+        <div class="stats-description">
+            Minutes
+        </div>
+    </div>
+
+    <!--Seconds-->
+    <div class="col-sm">
+        <div class="stats-number">
+            XX
+        </div>
+        <div class="stats-description">
+            Seconds
+        </div>
+    </div>
+
+</div>
+</div>
 
 <!--"Until The Fisher Regatta"-->
 <div class="row top-buffer"></div>
 <div class="row top-buffer"></div> 
 <div class ="container">
-    <div class = "row">
-        <div class = "col-lg">
+<div class = "row">
+    <div class = "col-lg">
 
-                <h1 align="center"> Until The Fisher Regatta!</h3>
+            <h1> Until The Fisher Regatta!</h3>
 
-        </div>
     </div>
+</div>
 </div>
 
 
@@ -137,46 +142,47 @@
 <div class="row top-buffer"></div>
 <div class="row top-buffer"></div> 
 <div class="container">
-    <div class="row">
+<div class="row">
 
-    <!--Instagram Column-->
-    <div class="col-sm-4">
-        <h3>Instagram</h3>
-        <p>
-            Keep up with the fisher community @real_fisherhall
-            and @fisher_regatta
-        </p>
-    </div>
+<!--Instagram Column-->
+<div class="col-sm-4">
+    <h3>Instagram</h3>
+    <p>
+        Keep up with the fisher community @real_fisherhall
+        and @fisher_regatta
+    </p>
+</div>
 
-    <!--Regatta Column-->
-    <div class="col-sm-4">
-        <h3>Regatta</h3> 
-        <p>
-            The fisher regatta is universally recognized as the best event on campus!
-        </p>
-    </div>
+<!--Regatta Column-->
+<div class="col-sm-4">
+    <h3>Regatta</h3> 
+    <p>
+        The fisher regatta is universally recognized as the best event on campus!
+    </p>
+</div>
 
-    <!--Welcome Weekend Column-->
-    <div class="col-sm-4">
-        <h3>Welcome Weekend</h3>
-        <p>
-            Are you a class of 2023 Fisherman? <br>
-            Check out our welcome weekend page!
-        </p> 
-    </div>
+<!--Welcome Weekend Column-->
+<div class="col-sm-4">
+    <h3>Welcome Weekend</h3>
+    <p>
+        Are you a class of 2023 Fisherman? <br>
+        Check out our welcome weekend page!
+    </p> 
+</div>
 
-    </div>
+</div>
 </div>
 
 <footer class="page-footer">
-    <p>
-        <br>
-        Ya Gotta Regatta
-        <br>
-    </p>
-    <div class="row top-buffer"></div> 
+<p>
+    <br>
+    Ya Gotta Regatta
+    <br>
+</p>
+<div class="row top-buffer"></div> 
 </footer>
-
-</body>
-
+   
+<script src="app.js"></script>
 </html>
+
+ 

@@ -87,8 +87,18 @@ p {
     text-align: center;
 }
 
+/* imbedded video formatting */
+iframe {
+    align-content: left;
+    align-items: left;
+    align-self: left;
+    text-align: left;
+}
+
 /*extra spacing between rows: <div class="row top-buffer"></div> ... include the ...*/
 .top-buffer { 
     margin-top:20px; 
 }
+
+
 

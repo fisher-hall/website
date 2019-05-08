@@ -93,7 +93,7 @@ footer p{font-size:1emm}
 #academic-mark{height:3em}@media (max-width:767px){
     .desktop-footer{display:none}
     .mobile-footer{display:block;text-align:center}}
-    .content{background-color:#fefff9;padding-top:3.5em;padding-bottom:2em;margin-top:-2em}
+    /*.content{background-color:#fefff9;padding-top:3.5em;padding-bottom:2em;margin-top:-2em}*/
 
     /*
     #coatOfArms{padding-top:1em;padding-bottom:1em}

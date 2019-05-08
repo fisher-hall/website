@@ -1,10 +1,10 @@
-/*
+
 .brand-bar{background-color:#002b5c;padding:.75em 0;border-bottom:3px solid #0d2240}
 .brand-bar img{height:1em}
 .brand-bar a{text-align:left}@media (max-width:767px){
     .brand-bar a{text-align:center;margin:0 auto}}@media (max-width:320px){
         .brand-bar img{height:.9em}}
-*/
+
 
 /* General Customizations*/
 div {

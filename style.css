@@ -87,7 +87,7 @@ p {
 
 
 
-/*
+
 footer{padding:2em 0 2em 0;background-color:#fefff9;margin-top:2em;border-top:2px solid #fc0;color:#051f08}
 footer a{color:#051f08;text-decoration:underline;font-size:1em}
 footer p{font-size:1emm}
@@ -95,7 +95,7 @@ footer p{font-size:1emm}
 #academic-mark{height:3em}@media (max-width:767px){
     .desktop-footer{display:none}
     .mobile-footer{display:block;text-align:center}}
-*/
+
 
 
 /* imbedded video formatting */

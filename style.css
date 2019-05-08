@@ -78,8 +78,9 @@ p {
     font-size: 35px;
 }
 
+/*
 footer{padding:2em 0 2em 0;background-color:#fefff9;margin-top:2em;border-top:2px solid #fc0;color:#051f08}footer a{color:#051f08;text-decoration:underline;font-size:1em}footer p{font-size:1emm}.mobile-footer{display:none}#academic-mark{height:3em}@media (max-width:767px){.desktop-footer{display:none}.mobile-footer{display:block;text-align:center}}.content{background-color:#fefff9;padding-top:3.5em;padding-bottom:2em;margin-top:-2em}#coatOfArms{padding-top:1em;padding-bottom:1em}.section-title{font-size:3.5em;padding-bottom:.1em;color:#051f08;border-bottom:.04em solid #fc0}@media (max-width:576px){.section-title{font-size:3em}}.blockquote{padding:1em 0 1em 0;color:#051f08;font-size:1.25em}@media (max-width:576px){.blockquote{font-size:1.2em}}.blockquote-footer{color:rgba(5,31,8,.6)}.section-content{font-size:1.2em}
-
+*/
 
 /* imbedded video formatting */
 iframe {

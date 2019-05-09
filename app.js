@@ -54,7 +54,6 @@ app.config(['$routeProvider', function($routeProvider) {
 
 app.controller('homeCtrl', ['$scope', function($scope){
     $scope.message = '';
-    $window.location.reload();
 }]);
 
 app.controller('HallStaffCtrl', ['$scope', function($scope){

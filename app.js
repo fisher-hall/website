@@ -48,12 +48,13 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'WelcomeWeekendCtrl'
   });
 
-  $routeProvider.otherwise({redirecTo: '/'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
 
 app.controller('homeCtrl', ['$scope', function($scope){
     $scope.message = '';
+    console.log('welcom to home');
 }]);
 
 app.controller('HallStaffCtrl', ['$scope', function($scope){

@@ -48,6 +48,11 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'WelcomeWeekendCtrl'
   });
 
+  $routeProvider.when('/StAdalberts', {
+    templateUrl: 'stadalberts.html',
+    controller: 'StAdalbertsCtrl'
+  });
+
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
@@ -87,6 +92,9 @@ app.controller('AlumniCtrl', ['$scope', function($scope){
 
 app.controller('WelcomeWeekendCtrl', ['$scope', function($scope){
     $scope.message = '';
+}]);
+app.controller('StAdalbertsCtrl', ['$scope', function($scope){
+  $scope.message = '';
 }]);
 
 

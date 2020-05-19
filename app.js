@@ -99,7 +99,7 @@ app.controller('StAdalbertsCtrl', ['$scope', function($scope){
 
 
 //Countdown
-var countDownDate = new Date("Apr 25, 2020 13:00:00").getTime();
+var countDownDate = new Date("Apr 24, 2021 13:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -1,0 +1,6 @@
+# Fisher Hall
+
+User-agent: *
+
+# TODO: create index.xml
+# Sitemap: https://fisher.nd.edu/index.xml

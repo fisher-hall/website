@@ -8,7 +8,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/acd79f14-3292-4f16-90bd-021c779352fa/deploy-status)](https://app.netlify.com/sites/nervous-archimedes-c5e290/deploys)  
 Dev branch automatically deploys to netlify. Before merging with master, test changes on the dev branch:  
-[nervous-archimedes-c5e290.netlify.app](https://nervous-archimedes-c5e290.netlify.app/#/)  
+[nervous-archimedes-c5e290.netlify.app](https://nervous-archimedes-c5e290.netlify.app/#/)
 
 ### Production / master
 

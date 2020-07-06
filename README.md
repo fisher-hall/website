@@ -6,9 +6,9 @@
 
 ### Dev
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6217b79c-6d79-4549-bbff-457c334c9f1f/deploy-status)](https://app.netlify.com/sites/unruffled-noyce-119dae/deploys)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6217b79c-6d79-4549-bbff-457c334c9f1f/deploy-status)](https://nervous-archimedes-c5e290.netlify.app/deploys)  
 Dev branch automatically deploys to netlify. Before merging with master, test changes on the dev branch:  
-[unruffled-noyce-119dae.netlify.app](https://unruffled-noyce-119dae.netlify.app/#/)  
+[nervous-archimedes-c5e290.netlify.app](https://nervous-archimedes-c5e290.netlify.app/#/)  
 
 ### Production / master
 

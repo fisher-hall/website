@@ -4,52 +4,52 @@ var app = angular.module("myApp", ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'home.html',
+    templateUrl: 'pages/home.html',
     controller: 'homeCtrl'
   });
 
   $routeProvider.when('/HallStaff', {
-    templateUrl: 'hall_staff.html',
+    templateUrl: 'pages/hall_staff.html',
     controller: 'HallStaffCtrl'
   });
 
   $routeProvider.when('/HallGov', {
-    templateUrl: 'hall_gov.html',
+    templateUrl: 'pages/hall_gov.html',
     controller: 'HallGovCtrl'
   });
 
   $routeProvider.when('/FisherRegatta', {
-    templateUrl: 'fisher_regatta.html',
+    templateUrl: 'pages/fisher_regatta.html',
     controller: 'FisherRegattaCtrl'
   });
 
   $routeProvider.when('/FisherFunk', {
-    templateUrl: 'fisher_funk.html',
+    templateUrl: 'pages/fisher_funk.html',
     controller: 'FisherFunkCtrl'
   });
 
   $routeProvider.when('/FredTalks', {
-    templateUrl: 'fred_talks.html',
+    templateUrl: 'pages/fred_talks.html',
     controller: 'FredTalksCtrl'
   });
 
   $routeProvider.when('/About', {
-    templateUrl: 'about.html',
+    templateUrl: 'pages/about.html',
     controller: 'AboutCtrl'
   });
 
   $routeProvider.when('/Alumni', {
-    templateUrl: 'alumni.html',
+    templateUrl: 'pages/alumni.html',
     controller: 'AlumniCtrl'
   });
 
   $routeProvider.when('/WelcomeWeekend', {
-    templateUrl: 'welcome_weekend.html',
+    templateUrl: 'pages/welcome_weekend.html',
     controller: 'WelcomeWeekendCtrl'
   });
 
   $routeProvider.when('/StAdalberts', {
-    templateUrl: 'st_adalberts.html',
+    templateUrl: 'pages/st_adalberts.html',
     controller: 'StAdalbertsCtrl'
   });
 

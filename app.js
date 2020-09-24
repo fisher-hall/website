@@ -9,47 +9,47 @@ app.config(['$routeProvider', function($routeProvider) {
   });
 
   $routeProvider.when('/HallStaff', {
-    templateUrl: 'HallStaff.html',
+    templateUrl: 'hall_staff.html',
     controller: 'HallStaffCtrl'
   });
 
   $routeProvider.when('/HallGov', {
-    templateUrl: 'HallGov.html',
+    templateUrl: 'hall_gov.html',
     controller: 'HallGovCtrl'
   });
 
   $routeProvider.when('/FisherRegatta', {
-    templateUrl: 'FisherRegatta.html',
+    templateUrl: 'fisher_regatta.html',
     controller: 'FisherRegattaCtrl'
   });
 
   $routeProvider.when('/FisherFunk', {
-    templateUrl: 'FisherFunk.html',
+    templateUrl: 'fisher_funk.html',
     controller: 'FisherFunkCtrl'
   });
 
   $routeProvider.when('/FredTalks', {
-    templateUrl: 'FredTalks.html',
+    templateUrl: 'fred_talks.html',
     controller: 'FredTalksCtrl'
   });
 
   $routeProvider.when('/About', {
-    templateUrl: 'About.html',
+    templateUrl: 'about.html',
     controller: 'AboutCtrl'
   });
 
   $routeProvider.when('/Alumni', {
-    templateUrl: 'Alumni.html',
+    templateUrl: 'alumni.html',
     controller: 'AlumniCtrl'
   });
 
   $routeProvider.when('/WelcomeWeekend', {
-    templateUrl: 'WelcomeWeekend.html',
+    templateUrl: 'welcome_weekend.html',
     controller: 'WelcomeWeekendCtrl'
   });
 
   $routeProvider.when('/StAdalberts', {
-    templateUrl: 'stadalberts.html',
+    templateUrl: 'st_adalberts.html',
     controller: 'StAdalbertsCtrl'
   });
 
@@ -98,7 +98,8 @@ app.controller('StAdalbertsCtrl', ['$scope', function($scope){
 }]);
 
 
-//Countdown
+// Countdown
+// to whoever the new maintainer is - put the date for the next Regatta in here
 var countDownDate = new Date("Apr 24, 2021 13:00:00").getTime();
 
 // Update the count down every 1 second

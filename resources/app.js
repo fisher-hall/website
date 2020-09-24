@@ -4,52 +4,52 @@ var app = angular.module("myApp", ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'home.html',
+    templateUrl: 'pages/home.html',
     controller: 'homeCtrl'
   });
 
   $routeProvider.when('/HallStaff', {
-    templateUrl: 'HallStaff.html',
+    templateUrl: 'pages/hall_staff.html',
     controller: 'HallStaffCtrl'
   });
 
   $routeProvider.when('/HallGov', {
-    templateUrl: 'HallGov.html',
+    templateUrl: 'pages/hall_gov.html',
     controller: 'HallGovCtrl'
   });
 
   $routeProvider.when('/FisherRegatta', {
-    templateUrl: 'FisherRegatta.html',
+    templateUrl: 'pages/fisher_regatta.html',
     controller: 'FisherRegattaCtrl'
   });
 
   $routeProvider.when('/FisherFunk', {
-    templateUrl: 'FisherFunk.html',
+    templateUrl: 'pages/fisher_funk.html',
     controller: 'FisherFunkCtrl'
   });
 
   $routeProvider.when('/FredTalks', {
-    templateUrl: 'FredTalks.html',
+    templateUrl: 'pages/fred_talks.html',
     controller: 'FredTalksCtrl'
   });
 
   $routeProvider.when('/About', {
-    templateUrl: 'About.html',
+    templateUrl: 'pages/about.html',
     controller: 'AboutCtrl'
   });
 
   $routeProvider.when('/Alumni', {
-    templateUrl: 'Alumni.html',
+    templateUrl: 'pages/alumni.html',
     controller: 'AlumniCtrl'
   });
 
   $routeProvider.when('/WelcomeWeekend', {
-    templateUrl: 'WelcomeWeekend.html',
+    templateUrl: 'pages/welcome_weekend.html',
     controller: 'WelcomeWeekendCtrl'
   });
 
   $routeProvider.when('/StAdalberts', {
-    templateUrl: 'stadalberts.html',
+    templateUrl: 'pages/st_adalberts.html',
     controller: 'StAdalbertsCtrl'
   });
 
@@ -98,7 +98,8 @@ app.controller('StAdalbertsCtrl', ['$scope', function($scope){
 }]);
 
 
-//Countdown
+// Countdown
+// to whoever the new maintainer is - put the date for the next Regatta in here
 var countDownDate = new Date("Apr 24, 2021 13:00:00").getTime();
 
 // Update the count down every 1 second

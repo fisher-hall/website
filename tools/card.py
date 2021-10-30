@@ -24,7 +24,37 @@ Relevant HTML looks like this:
 """
 
 def main():
-    pass
+    
+    attributes = {
+        "file" : "",
+        "name" : "",
+        "title" : "",
+        "major" : "",
+        "town" : "",
+        "hobby" : "",
+    }
+
+    for key in attributes.keys():
+        attributes[key] = input("Value for {}: ".format(key))
+
+    output = """
+    <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{}" alt="Card image cap" height="275">
+        <div class="card-body">
+            <h5 class="card-title">{}</h5>
+        </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{}</li>
+                <li class="list-group-item">Major: {}</li>
+                <li class="list-group-item">Hometown: {}</li>
+                <li class="list-group-item">Hobbies/Interests: {}</li>
+            </ul>
+        </div>
+    </div>
+    """.format(attributes['file'], attributes['name'], attributes['title'], attributes['major'], attributes['town'], attributes['hobby'])
+
+    print(output)
 
 if __name__ == "__main__":
     main()

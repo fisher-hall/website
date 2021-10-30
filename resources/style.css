@@ -1,0 +1,124 @@
+
+.brand-bar{background-color:#002b5c;padding:.75em 0;border-bottom:3px solid #0d2240}
+.brand-bar img{height:1em}
+.brand-bar a{text-align:left}@media (max-width:767px){
+    .brand-bar a{text-align:center;margin:0 auto}}@media (max-width:320px){
+        .brand-bar img{height:.9em}}
+
+
+/* General Customizations*/
+div {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+h4 {
+    text-align: left;
+    margin: 20px;
+}
+
+/*h2 customizations*/
+h2, h3 {
+    color: #3A5242;
+    text-align: left;
+    margin: 20px;
+}
+
+/* p customizations*/
+p {
+    text-align: left;
+    margin: 20px;
+}
+
+/*navbar customizations*/
+.navbar{
+    background-color: #3A5242;
+    margin-bottom: 0;
+}
+.dropdown-menu{
+    background-color: rgb(77, 114, 89);
+}
+.dropdown-menu a{
+    color: rgb(212, 212, 212);
+}
+.dropdown-menu a:hover{
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: rgb(77, 114, 89);
+}
+
+
+
+/*jumbotron customiations*/
+.jumbotron {
+    background-image: url("JumbotronBackground.svg");
+    background-size: cover;
+}
+.jumbotron h1{
+    font-size: 50px;
+    color: black;
+}
+.jumbotron p{
+    font-size: 20px;
+    color: black;
+}
+
+
+
+/*Stats*/
+.stats-container {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+.stat-container {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+.stats-number {
+    color: #3A5242;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+}
+.stats-description {
+    color: black;
+    font-size: 35px;
+}
+
+
+
+
+
+footer{padding:2em 0 2em 0;background-color:#fefff9;margin-top:2em;border-top:2px solid #fc0;color:#051f08}
+footer a{color:#051f08;text-decoration:underline;font-size:1em}
+footer p{font-size:1emm}
+.mobile-footer{display:none}
+#academic-mark{height:3em}@media (max-width:767px){
+    .desktop-footer{display:none}
+    .mobile-footer{display:block;text-align:center}}
+
+
+
+/* embedded video formatting */
+iframe {
+    align-content: left;
+    align-items: left;
+    align-self: left;
+    text-align: left;
+}
+
+/*extra spacing between rows: <div class="row top-buffer"></div> ... include the ...*/
+.top-buffer { 
+    margin-top:20px; 
+}
+
+
+

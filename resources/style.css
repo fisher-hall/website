@@ -92,8 +92,9 @@ p {
     color: black;
     font-size: 35px;
 }
-
-
+.countdown-label-hidden {
+    display: none;
+}
 
 
 
@@ -121,4 +122,35 @@ iframe {
 }
 
 
+/* let's make it a little responsive shall we? */
+/* fair warning I hate css so this is super hacky */
 
+@media (max-width: 768px) {
+    /*.col-sm {
+        max-width: 90px;
+    }*/
+    .stats-number {
+        font-size: 70px;
+        margin-bottom: -25px;
+    }
+    .stats-description {
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .jumbotron {
+        margin-bottom: -0.5rem;
+        /*max-height: 208px;*/
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .countdown-row {
+        flex-wrap: nowrap;
+    }
+    .countdown-col {
+        padding: 0;
+    }
+    .until-regatta {
+        margin-top: -10px;
+        font-size: 2rem;
+    }
+}

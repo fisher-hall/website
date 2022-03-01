@@ -123,6 +123,8 @@ var x = setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 
+  // Show the labels for days, hours, etc
+  Array.from(document.querySelectorAll('.countdown-label-hidden')).forEach((el) => el.classList.remove('countdown-label-hidden'));
 
   // If the count down is finished, write some text 
   if (distance < 0) {

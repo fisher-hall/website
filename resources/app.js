@@ -100,7 +100,7 @@ app.controller('StAdalbertsCtrl', ['$scope', function($scope){
 
 // Countdown
 // to whoever the new maintainer is - put the date for the next Regatta in here
-var countDownDate = new Date(2023, 3, 15, 13).getTime(); // 2023-04-15 13:00:00
+var countDownDate = new Date(2024, 3, 15, 13).getTime(); // 2024-04-15 13:00:00
 
 // Update the count down every 1 second
 var x = setInterval(function() {

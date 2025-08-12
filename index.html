@@ -21,6 +21,8 @@
      <!--Bootstrap and css-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="resources/style.css">
+     <!--Font Awesome for icons-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
      <!--Jquery-->
      <script src="resources/app.js"></script>
@@ -92,6 +94,35 @@
 </nav>
 </header>    
 
+<!--Site-wide Alert Modal-->
+<div class="modal fade" id="siteAlertModal" tabindex="-1" role="dialog" aria-labelledby="siteAlertModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content" style="background-color: #0B843D; color: white; border-radius: 16px;">
+      <div class="modal-header d-flex justify-content-between align-items-center" style="border-bottom: 1px solid rgba(255,255,255,0.2); padding: 8px 15px; min-height: auto; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+        <div style="width: 30px;"></div> <!-- Spacer for centering -->
+        <h5 class="modal-title text-center mb-0 flex-grow-1" style="line-height: 1.2; font-weight: bold; font-size: 1.8rem;">The Legacy Continues</h5>
+        <button type="button" class="close mb-0" data-dismiss="modal" aria-label="Close" style="color: white; font-size: 2rem; line-height: 1;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Alert Image -->
+        <img src="resources/CoyleRender.jpg" alt="Coyle Hall" class="mb-3 img-fluid" style="width: 98%; height: auto; max-width: 98%; border-radius: 16px;">
+        
+        <!-- Alert Text -->
+        <p class="mb-4 text-center" style="font-size: 1.2rem; font-weight: bold;">
+          As we prepare to move into our new building and adopt a new name, Fisher has transitioned to the Coyle Community.
+          <br><br>
+          This site is archived. Check out our new site at coylehallnd.com to learn more!
+        </p>
+        
+        <!-- Alert Button/Link -->
+        <a href="https://coylehallnd.com" class="btn btn-lg" target="_blank" id="alertButton" style="background-color: white; color: #0B843D; border: 2px solid white; font-weight: bold; border-radius: 16px;">Visit The Site <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Partial HTML Page Content-->
 <div ng-view=""></div>
 
@@ -140,6 +171,27 @@
           </div>
         </div>      
       </footer>
+
+<!--Site Alert Modal Script-->
+<script>
+$(document).ready(function() {
+    // Show the modal on page load
+    $('#siteAlertModal').modal('show');
+    
+    // Handle the "Learn More" button click
+    $('#alertButton').click(function(e) {
+        // Navigate to the link in the same tab
+        window.location.href = 'https://coylehallnd.com';
+        // No need to close modal since we're navigating away
+    });
+    
+    // Optional: Set a cookie to only show once per session
+    // if (!sessionStorage.getItem('alertShown')) {
+    //     $('#siteAlertModal').modal('show');
+    //     sessionStorage.setItem('alertShown', 'true');
+    // }
+});
+</script>
     
 
 </html>

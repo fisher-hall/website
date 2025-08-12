@@ -24,6 +24,31 @@
      <!--Font Awesome for icons-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+     <style>
+     /* Hover effects for modal buttons */
+     #alertButton {
+         transition: transform 0.2s ease-in-out;
+     }
+     #alertButton:hover {
+         transform: scale(1.1);
+     }
+     .modal-close-btn {
+         transition: transform 0.2s ease-in-out;
+     }
+     .modal-close-btn:hover {
+         transform: scale(1.1);
+     }
+     /* Hover effect for modal image */
+     .modal-image {
+         transition: transform 0.2s ease-in-out;
+         cursor: pointer;
+     }
+     .modal-image:hover {
+         transform: scale(1.03);
+     }
+     </style>
+     </style>
+
      <!--Jquery-->
      <script src="resources/app.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -101,13 +126,15 @@
       <div class="modal-header d-flex justify-content-between align-items-center" style="border-bottom: 1px solid rgba(255,255,255,0.2); padding: 8px 15px; min-height: auto; border-top-left-radius: 16px; border-top-right-radius: 16px;">
         <div style="width: 30px;"></div> <!-- Spacer for centering -->
         <h5 class="modal-title text-center mb-0 flex-grow-1" style="line-height: 1.2; font-weight: bold; font-size: 1.8rem;">The Legacy Continues</h5>
-        <button type="button" class="close mb-0" data-dismiss="modal" aria-label="Close" style="color: white; font-size: 2rem; line-height: 1;">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn btn-sm mb-0 modal-close-btn" data-dismiss="modal" aria-label="Close" style="background-color: white; color: #0B843D; border: 2px solid white; font-weight: bold; border-radius: 12px; width: 32px; height: 32px; padding: 0; display: flex; align-items: center; justify-content: center;">
+          <span aria-hidden="true" style="font-size: 1.6rem; line-height: 0; margin-top: -2px;">&times;</span>
         </button>
       </div>
       <div class="modal-body text-center">
         <!-- Alert Image -->
-        <img src="resources/CoyleRender.jpg" alt="Coyle Hall" class="mb-3 img-fluid" style="width: 98%; height: auto; max-width: 98%; border-radius: 16px;">
+        <a href="resources/CoyleRender.jpg" target="_blank">
+          <img src="resources/CoyleRender.jpg" alt="Coyle Hall" class="mb-3 img-fluid modal-image" style="width: 98%; height: auto; max-width: 98%; border-radius: 16px;">
+        </a>
         
         <!-- Alert Text -->
         <p class="mb-4 text-center" style="font-size: 1.2rem; font-weight: bold;">

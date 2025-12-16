@@ -1,6 +1,7 @@
 # fisher-hall-website
 
-> The official website of Notre Dame's Fisher Hall  
+The (formerly official) now archived website of Notre Dame's Fisher Hall.  
+*Check out the updated [Coyle Hall Site](https://github.com/fisher-hall/coyle-hall-site) here.*
 
 ## Deployment
 
